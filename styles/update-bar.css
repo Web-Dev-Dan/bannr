@@ -1,0 +1,36 @@
+.update-bar {
+    background-color: var(--color-tertiary);
+    padding: 1rem 6rem;
+    position: relative;
+}
+
+.update-bar__button {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    padding: 1rem;
+
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+}
+
+.update-bar__text {
+    color: var(--color-secondary);
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .update-bar__button {
+        right: 1rem;
+    }
+
+    .update-bar__text {
+        font-size: 1.2rem;
+    }
+}
