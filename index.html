@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts (Ubuntu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Title -->
+    <title>bannr | Personalised Twitter Banners in Minutes</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/update-bar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/pages/home.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ❗️ Update Bar ❗️ -->
+        <div id="updateBar" class="update-bar">
+            <!-- Close 'Update Bar' Button -->
+            <button id="closeUpdateBarBtn" class="update-bar__button btn-transparent">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p class="update-bar__text">Welcome to <span class="bold">bannr v.1.0.0</span>! This application is
+                currently in beta-stage
+                production.</p>
+        </div>
+
+        <!-- 🔎 Navigation Bar 🔍 -->
+        <nav class="navbar">
+            <!-- Name -->
+            <button id="homePageBtn" class="navbar__header-container btn-transparent">
+                <h1 class="header-container__header">bannr</h1>
+            </button>
+            <!-- Links -->
+            <div class="navbar__links-container">
+                <button id="bannersPageBtn" class="links-container__button btn-transparent">Banners</button>
+                <button id="followersPageBtn" class="links-container__button btn-transparent">Followers</button>
+                <button id="imagesPageBtn" class="links-container__button btn-transparent">Images</button>
+            </div>
+            <!-- Hamburger -->
+            <button class="navbar__hamburger-btn btn-transparent">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- 🏡 Home Page 🏡 -->
+        <main class="page home-page">
+            <div class="hero">
+                <div class="hero-inner">
+                    <img class="hero__image" src="./imgs/banner.png"
+                        alt="White Banner Template: White rectangle for the banner itself. Below, to the left, is a white circle, where the Twitter profile image would typically be displayed. To the right are two white circles and one rounded white rectangle to represent the buttons that would typically be positioned here on a Twitter account.">
+                    <div class="hero__text">
+                        <h2>Personalised</h2>
+                        <h2>Banners</h2>
+                        <h2>in Minutes...</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <h3 class="options__header">Create Your Perfect Banner</h3>
+                <div class="options__boxes">
+                    <!-- Banner Preview -->
+                    <div class="option-box">
+                        <img class="option-box__image" src="/imgs/examples/example-banner.png" alt="">
+                        <div class="option-box__text">
+                            <h4 class="option-box__text__header">Twitter Banners</h4>
+                            <p class="option-box__text__content">Create your own Twitter banner with the help of our
+                                banner templates.</p>
+                            <button id="makeBannerBtn" class="option-box__text__button btn-primary">Make Banner</button>
+                        </div>
+                    </div>
+
+                    <!-- Follower Preview -->
+                    <div class="option-box">
+                        <div class="option-box__text">
+                            <h4 class="option-box__text__header">Follower Landmarks</h4>
+                            <p class="option-box__text__content">Celebrate your most recent follower-count
+                                landmarks.</p>
+                            <button id="celebrateFollowersBtn"
+                                class="option-box__text__button btn-primary">Celebrate</button>
+                        </div>
+                        <img class="option-box__image" src="/imgs/examples/example-follower-poster.png" alt="">
+                    </div>
+
+                    <!-- Image Preview -->
+                    <div class="option-box">
+                        <img class="option-box__image" src="/imgs/examples/example-image-poster.png" alt="">
+                        <div class="option-box__text">
+                            <h4 class="option-box__text__header">Image Posts</h4>
+                            <p class="option-box__text__content">Create images for your Twitter posts with the
+                                dimensions you're looking for.</p>
+                            <button id="makeImageBtn" class="option-box__text__button btn-primary">Make Image</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- 🗓 Footer 🗓 -->
+        <footer class="footer">
+            <p class="footer__text">Created by <a class="footer__link" href="https://twitter.com/web_dev_dan"
+                    target="_blank" rel="noopener noreferrer">Daniel
+                    Healy</a>. Copyright &copy; <span id="currentDateText">2022</span>.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
