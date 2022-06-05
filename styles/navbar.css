@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header-container__header {
@@ -38,6 +39,22 @@
     display: none;
 }
 
+.navbar__close-btn {
+    color: var(--color-secondary);
+    font-size: 3rem;
+    padding: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.navbar__side-menu {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
 
 @media only screen and (max-width: 700px) {
     .navbar__links-container {
@@ -47,6 +64,15 @@
     .navbar__hamburger-btn {
         display: flex;
     }
+
+    .navbar__side-menu .navbar__links-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__side-menu .links-container__button {
+        margin: 1rem 0;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -54,4 +80,8 @@
         height: 10rem;
         padding: 0 3rem;
     }
+}
+
+.element-hidden {
+    display: none;
 }
