@@ -42,7 +42,7 @@
         </div>
 
         <!-- 🔎 Navigation Bar 🔍 -->
-        <nav class="navbar">
+        <nav id="navigationBar" class="navbar">
             <!-- Name -->
             <button id="homePageBtn" class="navbar__header-container btn-transparent">
                 <h1 class="header-container__header">bannr</h1>
@@ -54,8 +54,12 @@
                 <button id="imagesPageBtn" class="links-container__button btn-transparent">Images</button>
             </div>
             <!-- Hamburger -->
-            <button class="navbar__hamburger-btn btn-transparent">
+            <button id="hamburgerBtn" class="navbar__hamburger-btn btn-transparent">
                 <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- Close Hamburger -->
+            <button id="closeSideMenuBtn" class="navbar__close-btn btn-transparent element-hidden">
+                <i class="fa-solid fa-xmark"></i>
             </button>
         </nav>
 
