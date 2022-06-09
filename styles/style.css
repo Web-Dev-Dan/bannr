@@ -4,9 +4,11 @@
     --color-primary: #00acee;
     --color-secondary: #ffffff;
     --color-tertiary: #333333;
+    --color-light: rgb(246, 246, 246);
 
     /* Fonts */
     --font-primary: 'Ubuntu', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
 }
 
 /* Universal Reset */
