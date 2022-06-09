@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="styles/pages/home.css">
     <link rel="stylesheet" href="styles/pages/followers.css">
     <link rel="stylesheet" href="styles/pages/images.css">
+    <link rel="stylesheet" href="styles/pages/customisationSection.css">
     <link rel="stylesheet" href="styles/footer.css">
     <!-- Script -->
     <script src="html2canvas.min.js"></script>
@@ -128,44 +129,24 @@
         <!-- 🖼 Banner Page 🖼 -->
         <main id="bannersPage" class="page banner-page element-hidden">Banner</main>
 
+
+
         <!-- 👩‍👩‍👧‍👦 Follower Page 👩‍👩‍👧‍👦 -->
         <main id="followersPage" class="page follower-page element-hidden">
-            <div class="follower-page--grid">
-                <!-- 📝 Editing Column -->
-                <div class="grid-component grid-component__left">
-
-                </div>
-                <!-- 🤳 Preview Column -->
-                <div class="grid-component grid-component__right">
-                    <!-- 🤳 Follower Preview -->
-                    <div class="preview-container follower-preview">
-                        <div class="follower-preview__icon">
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                        <div class="follower-preview__text">
-                            <p class="follower-preview__text--number">4000</p>
-                            <p class="follower-preview__text--text">Followers</p>
-                        </div>
-                        <div class="follower-preview__message">Thank you!</div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- 🏙 Image Page 🏙 -->
-        <main id="imagePage" class="page image-page element-hidden">
-
-            <!-- Test -->
-            <!-- <div id="captureBox" class="capture__image-container">
-                <p>Test</p>
-            </div>
-            <div id="resultBox"></div>
-            <button id="captureBtn">Capture</button>
-            <button id="downloadBtn">Download</button> -->
-
             <div class="page-inner">
                 <div class="page-inner--left">
-                    <button id="testBtn" type="reset">Test</button>
+                    <!-- Edit Tag (absolute) -->
+                    <!-- <div class="preview-tag">
+                        <i class="preview-tag__icon fa-solid fa-pen-to-square"></i>
+                        <p class="preview-tag__text">Edit</p>
+                    </div> -->
+
+                    <!-- Scroll Down Icon (absolute) -->
+                    <!-- <div class="customisation__scroll-box">
+                        <i class="customisation__scroll-box__icon fa-solid fa-arrow-down"></i>
+                    </div> -->
+
+                    <button>Finish</button>
                 </div>
 
                 <div class="page-inner--right">
@@ -176,24 +157,177 @@
                     </div>
 
                     <!-- Preview Image -->
-                    <div class="preview-image-container">
+                    <div class="preview-followers-container">
+
+                        <!-- Preview: Image #1 -->
+                        <div id="preview__followers-1" class="preview-followers-container-inner">
+
+                            <div class="follower-preview__icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="follower-preview__text">
+                                <p class="follower-preview__text--number">4000</p>
+                                <p class="follower-preview__text--text">Followers</p>
+                            </div>
+                            <div class="follower-preview__message">Thank you!</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- 🏙 Image Page 🏙 -->
+        <main id="imagePage" class="page image-page element-hidden">
+
+            <div class="page-inner">
+                <div id="testBox" class="page-inner--left">
+                    <!-- Edit Tag (absolute) -->
+                    <!-- <div class="preview-tag">
+                        <i class="preview-tag__icon fa-solid fa-pen-to-square"></i>
+                        <p class="preview-tag__text">Edit</p>
+                    </div> -->
+
+                    <!-- Scroll Down Icon (absolute) -->
+                    <!-- <div class="customisation__scroll-box">
+                        <i class="customisation__scroll-box__icon fa-solid fa-arrow-down"></i>
+                    </div> -->
+
+                    <!-- Customise Settings -->
+                    <div class="customisation-container">
+                        <div class="customisation-container-inner">
+                            <div class="customisation__main-header">Customise Your Banner</div>
+
+                            <!-- Option (Template) -->
+                            <div class="customisation-options-box">
+                                <!-- Header Button -->
+                                <button id="images__dropdownTemplateBtn" class="customisation-options-box__header">
+                                    <i id="images__dropdownTemplateIcon"
+                                        class="customisation-options-box__icon fa-solid fa-chevron-down"></i>
+                                    <i class="customisation-options-box__header__icon fa-solid fa-object-ungroup"></i>
+                                    Choose a Template
+                                </button>
+                                <!-- Dropdown Box -->
+                                <div id="images__dropdownTemplateBox" class="dropdown-box element-hidden">
+                                    <div class="dropdown-box-inner">
+
+                                        <!-- Image 1 -->
+                                        <div class="image__template-container image__template-container--selected">
+                                            <button id="image__chooseTemplateBtn"
+                                                class="image__template-container__button btn-transparent">
+                                                <img src="./imgs/examples/example-image-poster.png" alt="">
+                                            </button>
+                                        </div>
+                                        <!-- Image 2 -->
+                                        <div class="image__template-container">
+                                            <button id="image__chooseTemplateBtn"
+                                                class="image__template-container__button btn-transparent">
+                                                <img src="./imgs/examples/example-image-poster.png" alt="">
+                                            </button>
+                                        </div>
+                                        <!-- Image 3 -->
+                                        <div class="image__template-container">
+                                            <button id="image__chooseTemplateBtn"
+                                                class="image__template-container__button btn-transparent">
+                                                <img src="./imgs/examples/example-image-poster.png" alt="">
+                                            </button>
+                                        </div>
+                                        <!-- Image 4 -->
+                                        <div class="image__template-container">
+                                            <button id="image__chooseTemplateBtn"
+                                                class="image__template-container__button btn-transparent">
+                                                <img src="./imgs/examples/example-image-poster.png" alt="">
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Option (Background) -->
+                            <div class="customisation-options-box">
+                                <!-- Header Button -->
+                                <button id="images__dropdownBackgroundBtn" class="customisation-options-box__header">
+                                    <i id="images__dropdownBackgroundIcon"
+                                        class="customisation-options-box__icon fa-solid fa-chevron-down"></i>
+                                    <i class="customisation-options-box__header__icon fa-solid fa-image"></i>
+                                    Upload an Image
+                                </button>
+                                <!-- Dropdown Box -->
+                                <div id="images__dropdownBackgroundBox" class="dropdown-box element-hidden">Coming
+                                    soon...</div>
+                            </div>
+
+                            <!-- Option (Text Content) -->
+                            <div class="customisation-options-box">
+                                <!-- Header Button -->
+                                <button id="images__dropdownTextBtn" class="customisation-options-box__header">
+                                    <i id="images__dropdownTextIcon"
+                                        class="customisation-options-box__icon fa-solid fa-chevron-down"></i>
+                                    <i class="customisation-options-box__header__icon fa-solid fa-pen-to-square"></i>
+                                    Edit Your Text
+                                </button>
+                                <!-- Dropdown Box -->
+                                <div id="images__dropdownTextBox" class="dropdown-box element-hidden">
+                                    Put input here...
+                                    <button id="textTestBtn">Change text to Dan</button>
+                                </div>
+                            </div>
+
+                            <!-- Option (Colours)) -->
+                            <div class="customisation-options-box">
+                                <!-- Header Button -->
+                                <button id="images__dropdownColoursBtn" class="customisation-options-box__header">
+                                    <i id="images__dropdownColoursIcon"
+                                        class="customisation-options-box__icon fa-solid fa-chevron-down"></i>
+                                    <i class="customisation-options-box__header__icon fa-solid fa-palette"></i>
+                                    Change Colours
+                                </button>
+                                <!-- Dropdown Box -->
+                                <div id="images__dropdownColoursBox" class="dropdown-box element-hidden">Coming soon...
+                                </div>
+                            </div>
+
+                            <div class="customisation-button-box">
+                                <button class="customisation-button-box__button btn-primary">Complete Banner</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Download Button (temporary) -->
+                    <button id="captureImageBtn">Finish</button>
+                </div>
+
+                <div class="page-inner--right">
+                    <!-- Preview Tag (absolute) -->
+                    <div class="preview-tag">
+                        <i class="preview-tag__icon fa-solid fa-magnifying-glass"></i>
+                        <p class="preview-tag__text">Preview</p>
+                    </div>
+
+                    <!-- Preview Image -->
+                    <div id="screenshotImageContainer" class="preview-image-container">
 
                         <!-- Preview: Image #1 -->
                         <div id="preview__img-1" class="preview-image-container-inner">
-                            <div class="preview-image-container__text">#100DaysOfCode</div>
+                            <div id="images__textContentBox" class="preview-image-container__text">#100DaysOfCode</div>
                         </div>
 
                     </div>
 
                     <!-- Capture Image -->
-                    <div id="screenshotBox" class="capture-image-container">
+                    <!-- <div id="screenshotBox" class="capture-image-container">
 
-                        <!-- Capture: Image #1 -->
+                        Capture: Image #1
                         <div id="capture__img-1" class="capture-image-container-inner">
                             <div class="capture-image-container__text">#100DaysOfCode</div>
                         </div>
 
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
